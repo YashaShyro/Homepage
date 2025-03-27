@@ -1,0 +1,393 @@
+body {
+    background: url(goku.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    pointer-events: none;
+}
+
+.portfolio-image {
+    width: 100%; /* Makes it responsive */
+    max-width: 600px; /* Limits size */
+    height: auto; /* Keeps aspect ratio */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #1b2838;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: 3px solid #66c0f4;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #66c0f4;
+}
+
+.profile-details {
+    padding: 20px;
+    position: relative;
+}
+
+.profile-details h2 {
+    color: #66c0f4;
+}
+
+.bio {
+    font-size: 16px;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b2838;
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b8b8b8;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #66c0f4;
+    text-decoration: underline;
+}
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    gap: 20px; /* Adds spacing between sections */
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+#portfolio, #prestasi {
+    width: 100%;
+    background-color: #121212;
+    color: #66c0f4;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+  
+.achievement-card {
+    background-color: #1a2533;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card h1 {
+    color: #4da8da;
+}
+
+.certifications, .screenshots {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.cert-item img, .screenshot-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+
+.cert-item img, .screenshot-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cert-item p, .screenshot-item p {
+    display: inline-block;
+    color: white;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-card {
+    background-color: #1a2533;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h1 {
+    color: #4da8da;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.contact-info p {
+    background: #111a27;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.contact-info a {
+    color: #4da8da;
+    text-decoration: none;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: #1a2533;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a.active {
+    color: #4da8da;
+}
+
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.section-card {
+    background-color: #1a2533;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-card h1 {
+    color: #4da8da;
+}
+
+.contact-list p {
+    background: #111a27;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.contact-list a {
+    color: #4da8da;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('goku.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: gray;
+}
+
+.cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cert-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.cert-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cert-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cert-item p {
+    font-size: 14px;
+    color: gray;
+}
